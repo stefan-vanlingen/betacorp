@@ -1,0 +1,17 @@
+.header {
+	
+}
+
+.navbar {
+	height: $navbar-height;
+	&.is-transparent {
+		.nav-item {
+			color: white;
+		}
+	}
+}
+
+.nav-item {
+	height: $navbar-height;
+	line-height: $navbar-height;
+}

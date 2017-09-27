@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.navbar {
+  height: 77px; }
+  .navbar.is-transparent .nav-item {
+    color: white; }
+
+.nav-item {
+  height: 77px;
+  line-height: 77px; }
+
+/*# sourceMappingURL=main.css.map */
