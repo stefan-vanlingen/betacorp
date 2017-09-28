@@ -12,4 +12,11 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="header-content">
+		<h6 class="header-caption"></h6>
+		<h1 class="header-title"></h1>
+		<p class="header-text"></p>
+		<a href="#" class="btn">dawda</a>
+	</div>
 </header

@@ -1,6 +1,14 @@
-// Import stylesheets here
+// Helpers
+@import "helpers/mixins";
+
+// Base
 @import "base/base";
-@import "base/variables";
 @import "base/typography";
+@import "base/variables";
+
+// Parts
 @import "parts/header";
 @import "parts/footer";
+
+// UI
+@import "ui/buttons";

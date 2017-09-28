@@ -5,7 +5,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* TYPOGRAPHY RELATED VARIABLES ARE IN TYPOGRAPHY.SCSS */
 @font-face {
   font-family: 'Brandon Grotesque';
   src: url("../fonts/Brandon_reg.otf");
@@ -20,8 +19,9 @@
   font-weight: 900; }
 body {
   font-family: "Brandon Grotesque", sans-serif;
-  font-size: 15px; }
+  font-size: 13px; }
 
+/* TYPOGRAPHY RELATED VARIABLES ARE IN TYPOGRAPHY.SCSS */
 .header {
   height: 530px; }
   .header::after {
@@ -37,6 +37,8 @@ body {
   width: 100%;
   height: 77px;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 100; }
   .navbar.is-transparent .nav-item {
     color: white; }
@@ -51,10 +53,22 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 15px;
-  letter-spacing: .05rem; }
+  font-size: 13px;
+  letter-spacing: .05rem;
+  position: relative; }
+  .nav-item::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    background-color: #fff; }
   .nav-item:not(.is-active) {
     opacity: 0.58; }
+  .nav-item.is-active::after {
+    width: 50%;
+    left: 25%; }
 
 body.home .header {
   height: 100vh; }
