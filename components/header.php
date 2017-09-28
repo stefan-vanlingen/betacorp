@@ -14,9 +14,15 @@
 	</div>
 
 	<div class="header-content">
-		<h6 class="header-caption"></h6>
-		<h1 class="header-title"></h1>
-		<p class="header-text"></p>
-		<a href="#" class="btn">dawda</a>
+		<div class="row">
+			<div class="column small-10">
+				<h6 class="header-caption"><i>Wij zijn Beta Corp</i></h6>
+				<h1 class="header-title">Wij bouwen backend systemen en webapplicaties voor bedrijven</h1>
+				<p class="header-text">
+					We bieden technische ondersteuning die het uitvoeren van uw diensten binnen uw bedrijf mogelijk maakt.
+				</p>
+				<a href="#" class="btn">Kom meer te weten</a>
+			</div>
+		</div>
 	</div>
 </header

@@ -1,0 +1,35 @@
+@mixin transition($speed) {
+	-webkit-transition: all $speed;
+	-o-transition: all $speed;
+	transition: all $speed;
+}
+
+@mixin transitionEase($speed) {
+	-webkit-transition: all $speed ease-in-out;
+	-o-transition: all $speed ease-in-out;
+	transition: all $speed ease-in-out;
+}
+
+@mixin transform($config) {
+	-webkit-transform: $config;
+	-ms-transform: $config;
+	-o-transform: $config;
+	transform: $config;
+}
+
+@mixin center($xy:'') {
+	position: absolute;
+	@if $xy == 'x' {
+		@include transform(translateX(-50%));
+		left: 50%;
+		top: 0;
+	} @else if $xy == 'y' {
+		@include transform(translateY(-50%));
+		left: 0;
+		top: 50%;
+	} @else {
+		@include transform(translate(-50% -50%));
+		left: 50%;
+		top: 50%;
+	}
+}

@@ -12,7 +12,6 @@
 
 	<main class="main">
 		<section class="section">
-			
 		</section>
 	</main>
 

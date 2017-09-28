@@ -11,6 +11,41 @@
 	}
 }
 
+.header-content {
+	width: 100%;
+	position: absolute;
+	bottom: $header-padding;
+	color: white;
+	z-index: 100;
+	.header-caption {
+		opacity: $text-dimmed-opac;
+	}
+	.header-title {
+		height: auto;
+		$margin: 50px;
+		margin-bottom: $margin;
+		position: relative;
+		&::after {
+			$height: 3px;
+			content: "";
+			width: 45px;
+			height: $height;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			margin-top: ($margin / 2) - ($height / 2);
+			background-color: #fff;
+		}
+	}
+	.header-text {
+		width: 80%;
+		font-size: $p-large-font-size;
+	}
+	.btn {
+		margin-top: 20px;
+	}
+}
+
 .navbar {
 	width: 100%;
 	height: $navbar-height;
@@ -36,10 +71,10 @@ nav {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 900;
-	font-size: $main-font-size;
 	letter-spacing: .05rem;
 	position: relative;
 	&::after {
+		@include transitionEase(.1s);
 		content: "";
 		width: 0;
 		height: 3px;
@@ -48,15 +83,14 @@ nav {
 		left: 50%;
 		background-color: #fff;
 	}
-	&:hover {
-	}
-	&:not(.is-active) {
-		opacity: $text-dimmed-opac;
-	}
+	&:hover,
 	&.is-active {
+		~ .nav-item {
+			opacity: $text-dimmed-opac;
+		}
 		&::after {
-			width: 50%;
-			left: 25%;
+			width: 30%;
+			left: 35%;
 		}
 	}
 }

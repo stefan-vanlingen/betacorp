@@ -5,6 +5,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* TYPOGRAPHY RELATED VARIABLES ARE IN TYPOGRAPHY.SCSS */
 @font-face {
   font-family: 'Brandon Grotesque';
   src: url("../fonts/Brandon_reg.otf");
@@ -19,9 +20,34 @@
   font-weight: 900; }
 body {
   font-family: "Brandon Grotesque", sans-serif;
-  font-size: 13px; }
+  font-size: 15px; }
 
-/* TYPOGRAPHY RELATED VARIABLES ARE IN TYPOGRAPHY.SCSS */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 33px; }
+
+h3 {
+  font-size: 29px; }
+
+h4 {
+  font-size: 22px; }
+
+h5 {
+  font-size: 18px; }
+
+h6 {
+  font-size: 15px; }
+
+p {
+  font-size: 15px; }
+
 .header {
   height: 530px; }
   .header::after {
@@ -32,6 +58,33 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.62); }
+
+.header-content {
+  width: 100%;
+  position: absolute;
+  bottom: 60px;
+  color: white;
+  z-index: 100; }
+  .header-content .header-caption {
+    opacity: 0.58; }
+  .header-content .header-title {
+    height: auto;
+    margin-bottom: 50px;
+    position: relative; }
+    .header-content .header-title::after {
+      content: "";
+      width: 45px;
+      height: 3px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      margin-top: 23.5px;
+      background-color: #fff; }
+  .header-content .header-text {
+    width: 80%;
+    font-size: 18px; }
+  .header-content .btn {
+    margin-top: 20px; }
 
 .navbar {
   width: 100%;
@@ -53,10 +106,12 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 13px;
   letter-spacing: .05rem;
   position: relative; }
   .nav-item::after {
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
     content: "";
     width: 0;
     height: 3px;
@@ -64,13 +119,25 @@ nav {
     top: 25px;
     left: 50%;
     background-color: #fff; }
-  .nav-item:not(.is-active) {
+  .nav-item:hover ~ .nav-item, .nav-item.is-active ~ .nav-item {
     opacity: 0.58; }
-  .nav-item.is-active::after {
-    width: 50%;
-    left: 25%; }
+  .nav-item:hover::after, .nav-item.is-active::after {
+    width: 30%;
+    left: 35%; }
 
 body.home .header {
   height: 100vh; }
+
+.btn {
+  height: 35px;
+  line-height: 35px;
+  border-radius: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-decoration: none;
+  padding: 0 20px;
+  background-color: #2D49D2;
+  display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */

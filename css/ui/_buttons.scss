@@ -1,0 +1,12 @@
+.btn {
+	height: $button-height;
+	line-height: $button-height;
+	border-radius: $main-border-radius;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 900;
+	text-decoration: none;
+	padding: 0 20px;
+	background-color: $main-color;
+	display: inline-block;
+}
