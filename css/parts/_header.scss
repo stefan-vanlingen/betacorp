@@ -1,5 +1,5 @@
 .header {
-	
+	height: $header-normal-height;
 }
 
 .navbar {
@@ -11,7 +11,19 @@
 	}
 }
 
+nav {
+	text-align: right;
+}
+
 .nav-item {
 	height: $navbar-height;
 	line-height: $navbar-height;
+	margin-left: $nav-item-spacing;
+}
+
+// When on homepage
+body.home {
+	.header {
+		height: $header-large-height;
+	}
 }

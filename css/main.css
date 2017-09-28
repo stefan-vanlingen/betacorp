@@ -5,13 +5,36 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* TYPOGRAPHY RELATED VARIABLES ARE IN TYPOGRAPHY.SCSS */
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("../fonts/Brandon_reg.otf");
+  font-weight: normal; }
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("../fonts/Brandon_med.otf");
+  font-weight: medium; }
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("../fonts/Brandon_bold.otf");
+  font-weight: bold; }
+.header {
+  height: 530px; }
+
 .navbar {
   height: 77px; }
   .navbar.is-transparent .nav-item {
     color: white; }
 
+nav {
+  text-align: right; }
+
 .nav-item {
   height: 77px;
-  line-height: 77px; }
+  line-height: 77px;
+  margin-left: 50px; }
+
+body.home .header {
+  height: 100vh; }
 
 /*# sourceMappingURL=main.css.map */

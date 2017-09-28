@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Beta Corp</title>
+	<link rel="stylesheet" href="vendor/foundation.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="home">
 
 <?php include "components/header.php" ?>
 
