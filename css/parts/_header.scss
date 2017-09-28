@@ -1,9 +1,21 @@
 .header {
 	height: $header-normal-height;
+	&::after {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(#000000, 0.62);
+	}
 }
 
 .navbar {
+	width: 100%;
 	height: $navbar-height;
+	position: fixed;
+	z-index: 100;
 	&.is-transparent {
 		.nav-item {
 			color: white;
@@ -19,6 +31,21 @@ nav {
 	height: $navbar-height;
 	line-height: $navbar-height;
 	margin-left: $nav-item-spacing;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: $main-font-size;
+	letter-spacing: .05rem;
+	&:hover {
+	}
+	&:not(.is-active) {
+		opacity: $text-dimmed-opac;
+	}
+	&.is-active {
+		&::after {
+
+		}
+	}
 }
 
 // When on homepage

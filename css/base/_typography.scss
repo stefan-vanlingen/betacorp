@@ -1,3 +1,9 @@
+// Variables
+$main-font:					'Brandon Grotesque', sans-serif;
+$main-font-size:			15px;
+
+$text-dimmed-opac:			.58;
+
 // Import font(s)
 @font-face {
 	font-family: 'Brandon Grotesque';
@@ -13,8 +19,13 @@
 
 @font-face {
 	font-family: 'Brandon Grotesque';
-	src: url('../fonts/Brandon_bold.otf');
-	font-weight: bold;
+	src: url('../fonts/Brandon_black.otf');
+	font-weight: 900;
+}
+
+body {
+	font-family: $main-font;
+	font-size: $main-font-size;
 }
 
 h1, h2, h3, h4, h5, h6 {

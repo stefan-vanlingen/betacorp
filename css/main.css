@@ -16,13 +16,28 @@
   font-weight: medium; }
 @font-face {
   font-family: 'Brandon Grotesque';
-  src: url("../fonts/Brandon_bold.otf");
-  font-weight: bold; }
+  src: url("../fonts/Brandon_black.otf");
+  font-weight: 900; }
+body {
+  font-family: "Brandon Grotesque", sans-serif;
+  font-size: 15px; }
+
 .header {
   height: 530px; }
+  .header::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.62); }
 
 .navbar {
-  height: 77px; }
+  width: 100%;
+  height: 77px;
+  position: fixed;
+  z-index: 100; }
   .navbar.is-transparent .nav-item {
     color: white; }
 
@@ -32,7 +47,14 @@ nav {
 .nav-item {
   height: 77px;
   line-height: 77px;
-  margin-left: 50px; }
+  margin-left: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: .05rem; }
+  .nav-item:not(.is-active) {
+    opacity: 0.58; }
 
 body.home .header {
   height: 100vh; }
