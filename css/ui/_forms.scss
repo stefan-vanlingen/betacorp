@@ -1,0 +1,39 @@
+.form {
+	input,
+	textarea,
+	label {
+		display: block;
+		width: 100%;
+	}
+
+	label {
+		text-transform: uppercase;
+		font-size: 15px;
+		font-weight: bold;
+		margin-bottom: 15px;
+		color: rgba(#111E5D, .4);
+	}
+
+	input {
+		height: $input-height;
+		padding: 0 10px;
+	}
+
+	input,
+	textarea {
+		background-color: #FFFFFF;
+		border: 1px solid rgba(106,106,106,0.33);
+		border-radius: $main-border-radius	;
+	}
+
+	textarea {
+		padding: 10px;
+		resize: none;
+	}
+
+	.columns,
+	.column {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}

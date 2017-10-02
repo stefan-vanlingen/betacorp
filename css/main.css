@@ -1,3 +1,4 @@
+/* TYPOGRAPHY RELATED VARIABLES ARE IN TYPOGRAPHY.SCSS */
 * {
   padding: 0;
   margin: 0;
@@ -5,7 +6,9 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* TYPOGRAPHY RELATED VARIABLES ARE IN TYPOGRAPHY.SCSS */
+.row {
+  width: 900px; }
+
 @font-face {
   font-family: 'Brandon Grotesque';
   src: url("../fonts/Brandon_reg.otf");
@@ -24,29 +27,86 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
-  font-weight: 900;
   margin: 0; }
 
 h1 {
-  font-size: 36px; }
+  font-size: 36px;
+  font-weight: 900; }
 
 h2 {
-  font-size: 33px; }
+  font-size: 28px;
+  font-weight: 900; }
 
 h3 {
-  font-size: 29px; }
+  font-size: 24px;
+  font-weight: 900; }
 
 h4 {
-  font-size: 22px; }
+  font-size: 22px;
+  font-weight: medium; }
 
 h5 {
-  font-size: 18px; }
+  font-size: 18px;
+  font-weight: normal; }
 
 h6 {
-  font-size: 15px; }
+  font-size: 15px;
+  font-weight: normal; }
 
 p {
-  font-size: 15px; }
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal; }
+
+.text-center {
+  text-align: center; }
+
+.post-typography h2, .post-typography h3, .post-typography h4, .post-typography h5, .post-typography h6 {
+  margin-bottom: 10px; }
+.post-typography p:not(:last-of-type) {
+  margin-bottom: 20px; }
+.post-typography .btn {
+  margin: 20px 0; }
+
+.btn {
+  height: 35px;
+  line-height: 35px;
+  border-radius: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-decoration: none;
+  padding: 0 20px;
+  background-color: #2D49D2;
+  display: inline-block;
+  letter-spacing: .1em; }
+
+.form input,
+.form textarea,
+.form label {
+  display: block;
+  width: 100%; }
+.form label {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: rgba(17, 30, 93, 0.4); }
+.form input {
+  height: 40px;
+  padding: 0 10px; }
+.form input,
+.form textarea {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(106, 106, 106, 0.33);
+  border-radius: 2px; }
+.form textarea {
+  padding: 10px;
+  resize: none; }
+.form .columns,
+.form .column {
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .header {
   height: 530px; }
@@ -66,7 +126,8 @@ p {
   color: white;
   z-index: 100; }
   .header-content .header-caption {
-    opacity: 0.58; }
+    opacity: 0.58;
+    font-weight: 900; }
   .header-content .header-title {
     height: auto;
     margin-bottom: 50px;
@@ -119,7 +180,7 @@ nav {
     top: 25px;
     left: 50%;
     background-color: #fff; }
-  .nav-item:hover ~ .nav-item, .nav-item.is-active ~ .nav-item {
+  .nav-item:not(.is-active) {
     opacity: 0.58; }
   .nav-item:hover::after, .nav-item.is-active::after {
     width: 30%;
@@ -128,16 +189,119 @@ nav {
 body.home .header {
   height: 100vh; }
 
-.btn {
-  height: 35px;
-  line-height: 35px;
-  border-radius: 2px;
-  color: #fff;
-  text-transform: uppercase;
+.footer {
+  padding: 20px 0; }
+
+.section.has-divider {
+  padding: 40px 0;
+  border-top: solid 1px #EEEEEE;
+  border-bottom: solid 1px #EEEEEE; }
+
+.section-header:not(.has-text) {
+  min-height: 100px; }
+.section-header.has-text {
+  margin-bottom: 50px; }
+  .section-header.has-text .section-header-title {
+    line-height: initial;
+    margin: 20px 0 10px;
+    display: block;
+    float: none; }
+  .section-header.has-text p {
+    width: 250px;
+    margin: 0 auto; }
+
+.section-header-title {
+  line-height: 100px;
   font-weight: 900;
-  text-decoration: none;
-  padding: 0 20px;
-  background-color: #2D49D2;
-  display: inline-block; }
+  float: left; }
+  .section-header-title.is-centered {
+    width: 100%;
+    text-align: center; }
+
+.section-header-button {
+  float: right;
+  position: relative;
+  top: 32.5px; }
+
+.section-carousel {
+  width: 100%;
+  position: relative; }
+  .section-carousel::after {
+    content: "";
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: #eee; }
+  .section-carousel .carousel-item-info {
+    padding: 75px 0; }
+    .section-carousel .carousel-item-info .carousel-item-header {
+      letter-spacing: .07em; }
+    .section-carousel .carousel-item-info .carousel-item-link {
+      text-transform: uppercase;
+      margin-top: 20px;
+      display: block;
+      font-weight: medium;
+      text-decoration: none; }
+
+.info-block {
+  padding: 70px 0;
+  position: relative; }
+  .info-block::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.62); }
+  .info-block h2, .info-block p {
+    color: white; }
+  .info-block .btn {
+    margin-bottom: 0; }
+
+.info-block-content {
+  z-index: 1;
+  position: relative;
+  width: 65%; }
+
+.circle-grid {
+  margin: 30px 0; }
+
+.circle-grid-wrapper {
+  height: 230px; }
+
+.circle-grid-item {
+  position: relative; }
+  .circle-grid-item img {
+    background-color: gray;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0;
+    position: absolute;
+    border-radius: 100%;
+    width: 180px;
+    height: 180px; }
+
+.maps-field {
+  background-color: #eee;
+  height: 370px; }
+
+.carousel {
+  overflow: hidden; }
+
+.carousel-item-thumb {
+  background-color: #eee;
+  width: 100%;
+  height: 200px; }
+
+.carousel-item-header {
+  margin-bottom: 18px; }
 
 /*# sourceMappingURL=main.css.map */

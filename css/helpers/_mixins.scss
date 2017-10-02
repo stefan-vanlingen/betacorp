@@ -27,7 +27,7 @@
 		@include transform(translateY(-50%));
 		left: 0;
 		top: 50%;
-	} @else {
+	} @else if $xy == 'xy' {
 		@include transform(translate(-50% -50%));
 		left: 50%;
 		top: 50%;

@@ -19,6 +19,7 @@
 	z-index: 100;
 	.header-caption {
 		opacity: $text-dimmed-opac;
+		font-weight: 900;
 	}
 	.header-title {
 		height: auto;
@@ -83,11 +84,11 @@ nav {
 		left: 50%;
 		background-color: #fff;
 	}
+	&:not(.is-active) {
+		opacity: $text-dimmed-opac;
+	}
 	&:hover,
 	&.is-active {
-		~ .nav-item {
-			opacity: $text-dimmed-opac;
-		}
 		&::after {
 			width: 30%;
 			left: 35%;

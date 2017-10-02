@@ -2,13 +2,16 @@
 @import "helpers/mixins";
 
 // Base
-@import "base/base";
 @import "base/variables";
+@import "base/base";
 @import "base/typography";
+
+// UI
+@import "ui/buttons";
+@import "ui/forms";
 
 // Parts
 @import "parts/header";
 @import "parts/footer";
-
-// UI
-@import "ui/buttons";
+@import "parts/section";
+@import "parts/carousel";

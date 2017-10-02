@@ -3,14 +3,15 @@ $main-font:					'Brandon Grotesque', sans-serif;
 
 $main-font-size:			15px;
 $h1-font-size:				36px;
-$h2-font-size:				33px;
-$h3-font-size:				29px;
+$h2-font-size:				28px;
+$h3-font-size:				24px;
 $h4-font-size:				22px;
 $h5-font-size:				18px;
 $h6-font-size:				$main-font-size;
 
 $p-font-size:				$main-font-size;
 $p-large-font-size:			$h5-font-size;
+$p-line-height:				24px;
 
 $text-dimmed-opac:			$main-opac;
 
@@ -40,34 +41,64 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
-	font-weight: 900;
 	margin: 0;
 }
 
 h1 {
 	font-size: $h1-font-size;
+	font-weight: 900;
 }
 
 h2 {
 	font-size: $h2-font-size;
+	font-weight: 900;
 }
 
 h3 {
 	font-size: $h3-font-size;
+	font-weight: 900;
 }
 
 h4 {
 	font-size: $h4-font-size;
+	font-weight: medium;
 }
 
 h5 {
 	font-size: $h5-font-size;
+	font-weight: normal;
 }
 
 h6 {
 	font-size: $h6-font-size;
+	font-weight: normal;
 }
 
 p {
 	font-size: $p-font-size;
+	line-height: $p-line-height;
+	font-weight: normal;
+}
+
+.text-center {
+	text-align: center;
+}
+
+// Add this class to an article if you want to apply custom typography to it
+.post-typography {
+
+	h2, h3, h4, h5, h6  {
+		margin-bottom: 10px;
+	}
+
+	p {
+		&:not(:last-of-type) {
+			margin-bottom: 20px;
+		}
+	}
+
+	.btn {
+		margin: 20px 0;
+	}
+
 }
