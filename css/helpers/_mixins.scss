@@ -17,19 +17,26 @@
 	transform: $config;
 }
 
-@mixin center($xy:'') {
+@mixin centerX() {
+	@include transform(translateX(-50%));
 	position: absolute;
-	@if $xy == 'x' {
-		@include transform(translateX(-50%));
-		left: 50%;
-		top: 0;
-	} @else if $xy == 'y' {
-		@include transform(translateY(-50%));
-		left: 0;
-		top: 50%;
-	} @else if $xy == 'xy' {
-		@include transform(translate(-50% -50%));
-		left: 50%;
-		top: 50%;
-	}
+	left: 50%;
+}
+
+@mixin centerY() {
+	@include transform(translateY(-50%));
+	position: absolute;
+	top: 50%;
+}
+
+@mixin centerXY() {
+	@include transform(translate(-50%, -50%));
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+@mixin shadow($config) {
+	-webkit-box-shadow: $config;
+	box-shadow: $config;
 }

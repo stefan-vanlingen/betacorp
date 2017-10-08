@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Beta Corp</title>
+	<link rel="stylesheet" href="vendor/foundation.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="home">
+
 <header class="header" style="background-image: url('uploads/background.jpeg');">
 	<div class="navbar is-transparent">
 		<div class="row">
@@ -12,17 +22,3 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="header-content">
-		<div class="row">
-			<div class="column small-10">
-				<h6 class="header-caption"><i>Wij zijn Beta Corp</i></h6>
-				<h1 class="header-title">Wij bouwen backend systemen en webapplicaties voor bedrijven</h1>
-				<p class="header-text">
-					We bieden technische ondersteuning die het uitvoeren van uw diensten binnen uw bedrijf mogelijk maakt.
-				</p>
-				<a href="#" class="btn">Kom meer te weten</a>
-			</div>
-		</div>
-	</div>
-</header

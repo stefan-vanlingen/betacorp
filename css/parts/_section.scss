@@ -1,6 +1,5 @@
 .section {
 	&.has-divider {
-		padding: 40px 0;
 		border-top: solid 1px #EEEEEE;
 		border-bottom: solid 1px #EEEEEE;
 	}
@@ -11,18 +10,25 @@
 		min-height: $section-header-height;
 	}
 	&.has-text {
-		margin-bottom: 50px;
+		padding: 40px 0;
 		.section-header-title {
 			line-height: initial;
-			margin: 20px 0 10px;
+			margin: 0 0 10px;
 			display: block;
 			float: none;
 		}
 		p {
-			width: 250px;
+			width: 350px;
 			margin: 0 auto;
 		}
 	}
+	&.big-padding {
+		padding: 80px 0;
+	}
+}
+
+.section-form {
+	padding-bottom: 40px;
 }
 
 .section-header-title {
@@ -112,7 +118,7 @@
 		// Temp
 		background-color: gray;
 
-		@include center(x);
+		@include centerX();
 		position: absolute;
 		border-radius: 100%;
 		width: 180px;
