@@ -123,42 +123,42 @@
 			<div class="circle-grid">
 				<div class="row">
 					<div class="columns small-4 medium-3 circle-grid-wrapper">
-						<div class="circle-grid-item">
+						<div class="circle-grid-item team-member" name="David">
 							<img src="#" alt="">
 						</div>
 					</div>
 					<div class="columns small-4 medium-3 circle-grid-wrapper">
-						<div class="circle-grid-item">
+						<div class="circle-grid-item team-member" name="John">
 							<img src="#" alt="">
 						</div>
 					</div>
 					<div class="columns small-4 medium-3 circle-grid-wrapper">
-						<div class="circle-grid-item">
+						<div class="circle-grid-item team-member" name="Peter">
 							<img src="#" alt="">
 						</div>
 					</div>
 					<div class="columns small-4 medium-3 circle-grid-wrapper">
-						<div class="circle-grid-item">
+						<div class="circle-grid-item team-member" name="Bart">
 							<img src="#" alt="">
 						</div>
 					</div>
 					<div class="columns small-4 medium-3 circle-grid-wrapper">
-						<div class="circle-grid-item">
+						<div class="circle-grid-item team-member" name="Tim">
 							<img src="#" alt="">
 						</div>
 					</div>
 					<div class="columns small-4 medium-3 circle-grid-wrapper">
-						<div class="circle-grid-item">
+						<div class="circle-grid-item team-member" name="Rick">
 							<img src="#" alt="">
 						</div>
 					</div>
 					<div class="columns small-4 medium-3 circle-grid-wrapper">
-						<div class="circle-grid-item">
+						<div class="circle-grid-item team-member" name="Tom">
 							<img src="#" alt="">
 						</div>
 					</div>
 					<div class="columns small-4 medium-3 circle-grid-wrapper">
-						<div class="circle-grid-item">
+						<div class="circle-grid-item team-member" name="Michael">
 							<img src="#" alt="">
 						</div>
 					</div>
