@@ -15,7 +15,7 @@ window.onload = function() {
 		var targetCaption = $doc.createElement('span');
 
 		// Give it some data
-		targetCaption.setAttribute('class', 'team-member-caption');
+		targetCaption.setAttribute('class', 'circle-grid-caption');
 		targetCaption.innerHTML = name;
 
 		// Add to the team member

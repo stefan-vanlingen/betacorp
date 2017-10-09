@@ -104,28 +104,6 @@
 	width: 65%;
 }
 
-.circle-grid {
-	margin: 30px 0;
-}
-
-.circle-grid-wrapper {
-	height: 230px;
-}
-
-.circle-grid-item {
-	position: relative;
-	img {
-		// Temp
-		background-color: gray;
-
-		@include centerX();
-		position: absolute;
-		border-radius: 100%;
-		width: 180px;
-		height: 180px;
-	}
-}
-
 .maps-field {
 	// temp
 	background-color: #eee;

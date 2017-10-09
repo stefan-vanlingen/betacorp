@@ -108,6 +108,66 @@ p {
   margin-top: 10px;
   margin-bottom: 10px; }
 
+.circle-grid {
+  margin: 30px 0; }
+
+.circle-grid-wrapper {
+  height: 230px; }
+
+.circle-grid-item {
+  position: relative; }
+  .circle-grid-item:hover .circle-grid-caption {
+    opacity: 1;
+    top: -50px; }
+  .circle-grid-item img {
+    background-color: gray;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    position: absolute;
+    border-radius: 100%;
+    width: 180px;
+    height: 180px; }
+
+.circle-grid-caption {
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  position: absolute;
+  opacity: 0;
+  top: -30px;
+  background-color: #2D49D2;
+  color: white;
+  padding: 5px 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .08rem;
+  font-size: 15px;
+  border-radius: 40px; }
+  .circle-grid-caption::after {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    -o-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: -1px;
+    border-bottom-right-radius: 2px;
+    background-color: inherit; }
+
 .header {
   position: relative;
   overflow: hidden;
@@ -324,27 +384,6 @@ body.home .header {
   z-index: 1;
   position: relative;
   width: 65%; }
-
-.circle-grid {
-  margin: 30px 0; }
-
-.circle-grid-wrapper {
-  height: 230px; }
-
-.circle-grid-item {
-  position: relative; }
-  .circle-grid-item img {
-    background-color: gray;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    position: absolute;
-    left: 50%;
-    position: absolute;
-    border-radius: 100%;
-    width: 180px;
-    height: 180px; }
 
 .maps-field {
   background-color: #eee;
