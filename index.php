@@ -15,9 +15,9 @@
 				<div class="columns small-12">
 					<div class="navbar-logo"></div>	
 					<nav class="nav">
-						<a href="/" class="nav-item">Home</a>
+						<a href="/" class="nav-item is-active">Home</a>
 						<a href="#" class="nav-item">Over ons</a>
-						<a href="#" class="nav-item is-active">Portfolio</a>
+						<a href="#" class="nav-item">Portfolio</a>
 						<a href="#" class="nav-item">Contact</a>
 					</nav>
 				</div>
