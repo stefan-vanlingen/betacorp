@@ -47,7 +47,7 @@
 					<div class="columns small-12 small-centered text-center">
 						<h5 class="section-header-title">Ons beste werk op een rijtje</h5>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi possimus suscipit tenetur provident.
+							Veel van onze projecten zitten in de financiële sector: crowdfunding, mobiele betalingen, obligatie uitgifte systemen en betalingsplatformen. Maar ook in de zorgsector zijn wij druk op het snijvlak van security en privacy.
 						</p>
 					</div>
 				</div>
@@ -62,7 +62,7 @@
 						<a href="#">
 							<div class="portfolio-item">
 								<div class="portfolio-item-header">
-									<div class="portfolio-item-title">Project</div>
+									<div class="portfolio-item-title">Leanfund.us - Get a Crowd</div>
 								</div>
 								<div class="portfolio-item-thumb"></div>
 							</div>
